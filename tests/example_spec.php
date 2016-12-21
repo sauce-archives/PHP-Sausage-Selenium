@@ -20,7 +20,7 @@ class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
     {
         $this->assertContains("I am a page title", $this->title());
     }
-
+    /*
     public function testLink()
     {
         $link = $this->byId('i am a link');
@@ -52,4 +52,5 @@ class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
 
         $this->spinAssert("Comment never showed up!", $comment_test);
     }
+    */
 }
