@@ -18,7 +18,7 @@ class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
 
     public function testTitle()
     {
-        $this->assertContains("Staging -  Relief Factor Quickstart Pack Your Natural Advantage Over Chronic Pain", $this->title());
+        $this->assertContains("Staging - Relief Factor | Healthy Inflammation Response Supplement", $this->title());
     }
     /*
     public function testLink()
