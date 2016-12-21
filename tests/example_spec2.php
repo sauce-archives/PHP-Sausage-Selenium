@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 
 class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
 {
-    protected $start_url = 'http://127.0.0.1:8000/index.php/';
+    protected $start_url = 'http://127.0.0.1/index.php/';
 
     public static $browsers = array(
         array(
