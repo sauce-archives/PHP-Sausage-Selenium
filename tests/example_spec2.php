@@ -18,7 +18,7 @@ class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
 
     public function testTitle()
     {
-        $this->assertContains("I am a page title", $this->title());
+        $this->assertContains("Staging -  Relief Factor Quickstart Pack Your Natural Advantage Over Chronic Pain", $this->title());
     }
     /*
     public function testLink()
