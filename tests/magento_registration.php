@@ -83,7 +83,7 @@ class AccountTestCase extends Sauce\Sausage\WebDriverTestCase
         $this->byId('confirmation')->value('1q2w3e4r');
 
         $this->byXPath('//*[@id="form-validate"]/*/button[contains(@class,"button")]')->click();
-        $this->assertContains("My Account", $this->title());
+        $this->assertContains("Account", $this->title());
 
     }
 
@@ -99,7 +99,7 @@ class AccountTestCase extends Sauce\Sausage\WebDriverTestCase
         $this->byId('pass')->value('1q2w3e4r');
 
         $this->byId('send2')->click();
-        $this->assertContains("My Account", $this->title());
+        $this->assertContains("Account", $this->title());
     }
 
     /**
