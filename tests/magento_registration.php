@@ -60,6 +60,7 @@ class AccountTestCase extends Sauce\Sausage\WebDriverTestCase
         $this->byId('email_address')->value($this->getTmpEmail());
         $this->byXPath('//*[@id="form-validate"]/div[2]/button')->click();
 
+        sleep(2);
         $this->assertContains("Customer Login", $this->title());
         $alertMessage = $this->byXPath('//html/body/div/div/div[1]/div/div/div/div[2]')->text();
         $this->assertContains($this->getTmpEmail(), $alertMessage);
