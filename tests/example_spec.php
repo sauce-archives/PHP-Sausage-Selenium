@@ -18,7 +18,7 @@ class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
 
     public function testTitle()
     {
-        $this->assertContains("Staging - Relief Factor | Healthy Inflammation Response Supplement", $this->title());
+        $this->assertContains("Relief Factor", $this->title());
     }
     /*
     public function testLink()
