@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 
 class AccountTestCase extends Sauce\Sausage\WebDriverTestCase
 {
-    protected $base_url = 'http://staging-secure-1386883659.us-west-2.elb.amazonaws.com/';
+    protected $base_url = 'http://127.0.0.1/';
 
     public static $browsers = [
         [
