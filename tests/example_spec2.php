@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 
 class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
 {
-    protected $start_url = 'http://saucelabs.com/test/guinea-pig';
+    protected $start_url = 'http://127.0.0.1/index.php/';
 
     public static $browsers = array(
         array(
@@ -18,9 +18,9 @@ class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
 
     public function testTitle()
     {
-        $this->assertContains("I am a page title", $this->title());
+        $this->assertContains("Relief Factor", $this->title());
     }
-
+    /*
     public function testLink()
     {
         $link = $this->byId('i am a link');
@@ -52,4 +52,5 @@ class MyAwesomeTestCase extends Sauce\Sausage\WebDriverTestCase
 
         $this->spinAssert("Comment never showed up!", $comment_test);
     }
+    */
 }
