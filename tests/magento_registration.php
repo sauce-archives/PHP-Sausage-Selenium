@@ -52,9 +52,11 @@ class AccountTestCase extends Sauce\Sausage\WebDriverTestCase
         sleep(5);// waiting for auto-redirection afte log-out
 
         $this->url('customer/account/login/');
+        sleep(2);
         $this->assertContains("Customer Login", $this->title());
 
         $this->byXPath('//*[@id="login-form"]/div/div[2]/div[1]/ul/li[3]/a')->click();
+        sleep(2);
         $this->assertContains("Forgot Your Password", $this->title());
 
         $this->byId('email_address')->value($this->getTmpEmail());
